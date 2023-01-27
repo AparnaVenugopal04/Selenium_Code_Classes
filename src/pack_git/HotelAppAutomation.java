@@ -74,7 +74,7 @@ public class HotelAppAutomation
 		//Drop down to select Number of Rooms
 		 new Select(driver.findElement(By.id("room_nos"))).selectByValue("2");
 		 
-		 //Date picker-Enter checkin date
+		 //Date picker-Enter check in date
 		 WebElement checkinDate = driver.findElement(By.id("datepick_in"));
 		 checkinDate.clear();
 		 checkinDate.sendKeys("24/12/2022");

@@ -34,11 +34,11 @@ public class DragnDropDemo {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		((JavascriptExecutor) driver).executeScript("window.scrollBy(0,250)"); 
 		
-		//Find the webelement for draggable element
+		//Find the web element for draggable element
 		WebElement draggable = driver.findElement(By.id("draggable"));
 		System.out.println("Found draggable");
 		
-		//Find the webelement for droppable element
+		//Find the web element for droppable element
 		WebElement droppable = driver.findElement(By.id("droppable"));
 		String dropHere = droppable.getText();
 		System.out.println("Text before dropping : " +dropHere);
